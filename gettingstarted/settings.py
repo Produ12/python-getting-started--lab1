@@ -49,11 +49,10 @@ DEBUG = os.environ.get("ENVIRONMENT") == "development"
 # The `DYNO` env var is set on Heroku CI, but it's not a real Heroku app, so we have to
 # also explicitly exclude CI:
 # https://devcenter.heroku.com/articles/heroku-ci#immutable-environment-variables
-IS_HEROKU_APP = "DYNO" in os.environ and "CI" not in os.environ
 
 IS_HEROKU_APP = "DYNO" in os.environ and "CI" not in os.environ 
 # Zawsze bazowa lista hostów (lokalnie + Render) 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'paas-bm-lab0.onrender.com'] 
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'lab1-python-vf8n.onrender.com'] 
 # Jeśli używasz Heroku i chcesz wildcard, możesz opcjonalnie rozszerzyć: 
 if os.environ.get('IS_HEROKU_APP') == '1': 
 ALLOWED_HOSTS.append('*') 
