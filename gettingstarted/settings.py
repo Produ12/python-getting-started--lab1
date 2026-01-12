@@ -52,7 +52,7 @@ DEBUG = os.environ.get("ENVIRONMENT") == "development"
 
 IS_HEROKU_APP = "DYNO" in os.environ and "CI" not in os.environ 
 # Zawsze bazowa lista hostów (lokalnie + Render) 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'paas-bm-lab0.onrender.com'] 
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'paas-bm-lab0.onrender.com', 'lab1-python-vf8n.onrender.com'] 
 # Jeśli używasz Heroku i chcesz wildcard, możesz opcjonalnie rozszerzyć: 
 if os.environ.get('IS_HEROKU_APP') == '1': 
  ALLOWED_HOSTS.append('*') 
